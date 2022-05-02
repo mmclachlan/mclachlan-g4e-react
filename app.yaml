@@ -1,0 +1,11 @@
+# [START app_yaml]
+runtime: nodejs
+env: flex
+
+# make the app cheaper in google cloud
+manual_scaling:
+    instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
